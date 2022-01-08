@@ -14,18 +14,23 @@ h1{
     width: 500px;
     padding: 40px;
     border-radius: 25px;
+    /* Below CSS property aligns the div to the center */
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    /*  */
 }
 
+/* Below CSS property will remove the upper and down button in the number input*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+/*  */
+
 
 #principal{
     margin-left: 61px;
