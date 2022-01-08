@@ -1,16 +1,40 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+    <title>SIC</title>
+</head>
+<div class="maindiv">
+    <h1>Simple Interest Calculator</h1>
+    <div class="amount">
+    Amount <input type="number" id="principal">  <br/>
+    </div>
+    <div class="rate">
+        Rate <input type="range" id="rate" oninput="updateRate()" min="1" max="20" value="10.25" step="0.25"><span id="rate_val">10.25%</span><br/>
+    </div>
+    
+    No. of Year
+    <select name="" id="years">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+    </select>  <br/>
+    
+    <button class="compute" onclick="compute()">Compute Interest</button><br>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+    <span id="result"></span><br>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+    <footer>
+        &#169; This Calculator belongs to Jaimini
+    </footer>
+</div>
+</body>
 </html>

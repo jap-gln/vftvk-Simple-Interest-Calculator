@@ -1,4 +1,47 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black; 
+    font-family: arial;
+    color:white;
+}
+h1{
+    color:grey;
+    font-family: verdana;
+}
 
+.maindiv{
+    background-color: white;
+    color: black;
+    width: 500px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 25px;
+}
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#principal{
+    margin-left: 61px;
+}
+#rate{
+    margin-left: 81px;
+}
+
+#years{
+    margin-left: 37px;
+}
+
+.amount{
+    margin-bottom: 16px;
+}
+.rate{
+    margin-bottom: 18px;
+}
+
+.compute{
+    margin-top: 19px;
+    margin-bottom: 20px;
+}
