@@ -12,9 +12,14 @@ h1{
     background-color: white;
     color: black;
     width: 500px;
-    margin: auto;
+    position: absolute;
     padding: 40px;
     border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 input::-webkit-outer-spin-button,
